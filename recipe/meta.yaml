@@ -1,18 +1,18 @@
 {% set name = "aodhclient" %}
-{% set version = "2.1.0" %}
+{% set version = "2.1.1" %}
 
 package:
-  name: "{{ name|lower }}"
-  version: "{{ version }}"
+  name: {{ name|lower }}
+  version: {{ version }}
 
 source:
-  url: "https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz"
-  sha256: b4bf9e60c6b981bfa9e4b0cde3d2a6b8db81b1c278fc665385d72032acf79c92
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  sha256: 56dc0b5ff137b009f9d186674f7d94f0b8f69d202590f88b24390063050623b9
 
 build:
   number: 0
   noarch: python
-  script: "{{ PYTHON }} -m pip install . -vv"
+  script: {{ PYTHON }} -m pip install . -vv
   entry_points:
     - aodh = aodhclient.shell:main
 
@@ -45,7 +45,7 @@ about:
   license: Apache-2.0
   license_family: APACHE
   license_file: LICENSE
-  summary: "Python client library for Openstack Aodh"
+  summary: Python client library for Openstack Aodh
   dev_url: https://docs.openstack.org/infra/manual/developers.html
 
 extra:
