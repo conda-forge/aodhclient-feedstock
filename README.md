@@ -5,7 +5,7 @@ Home: https://docs.openstack.org/python-aodhclient/latest/
 
 Package license: Apache-2.0
 
-Feedstock license: BSD 3-Clause
+Feedstock license: BSD-3-Clause
 
 Summary: Python client library for Openstack Aodh
 
