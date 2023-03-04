@@ -1,11 +1,11 @@
-About aodhclient
-================
+About aodhclient-feedstock
+==========================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/aodhclient-feedstock/blob/main/LICENSE.txt)
 
 Home: https://docs.openstack.org/python-aodhclient/latest/
 
 Package license: Apache-2.0
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/aodhclient-feedstock/blob/main/LICENSE.txt)
 
 Summary: Python client library for Openstack Aodh
 
