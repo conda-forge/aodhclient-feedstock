@@ -6,7 +6,7 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
   sha256: 642a7f9b8987ba3f156457145672e5d59d55a2ab982a545d6bc5065b2e064d60
 
 build:
@@ -20,10 +20,10 @@ requirements:
   host:
     - pbr
     - pip
-    - python >=3.8
+    - python 3.9
     - setuptools
   run:
-    - python >=3.8
+    - python >=3.9
     - pbr >=1.4
     - cliff >1.16.0
     - osc-lib >=1.0.1
