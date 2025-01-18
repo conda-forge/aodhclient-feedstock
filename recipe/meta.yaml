@@ -10,7 +10,7 @@ source:
   sha256: 642a7f9b8987ba3f156457145672e5d59d55a2ab982a545d6bc5065b2e064d60
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
   entry_points:
@@ -20,10 +20,10 @@ requirements:
   host:
     - pbr
     - pip
-    - python 3.9
+    - python {{ python_min }}
     - setuptools
   run:
-    - python >=3.9
+    - python >={{ python_min }}
     - pbr >=1.4
     - cliff >1.16.0
     - osc-lib >=1.0.1
@@ -35,6 +35,8 @@ requirements:
     - pyparsing
 
 test:
+  requires:
+    - python {{ python_min }}
   imports:
     - aodhclient
   commands:
