@@ -1,5 +1,5 @@
 {% set name = "aodhclient" %}
-{% set version = "3.7.1" %}
+{% set version = "3.8.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: d8a8d60b7dedc4c11a0fa5a80cd99fbbfc00b78e05caba899a983a2a34409b8c
+  sha256: db9a4519a7baae07acca5d1d0a3cfb56f88eb2bb89c57b826508485878c25768
 
 build:
   number: 0
