@@ -1,5 +1,5 @@
 {% set name = "aodhclient" %}
-{% set version = "3.10.1" %}
+{% set version = "3.11.0" %}
 {% set python_min = "3.10" %}
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 97e107e2e2aefecdf51ffc199d4e088bc307fb600c15c9aca2a6e16cb5b30ba0
+  sha256: 398b6f8c33d84796019aa67df4595fb0c03030a8c5f8f3f1001c14b8e89b7df0
 
 build:
   number: 0
